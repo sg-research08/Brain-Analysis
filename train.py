@@ -193,10 +193,33 @@ ensemble_model.compile(optimizer='adam',
 
 ensemble_model.summary()
 
+class SaveBestModel(tf.keras.callbacks.Callback):
+    def __init__(self, save_best_metric='val_accuracy', this_max=True):
+        self.save_best_metric = save_best_metric
+        self.max = this_max
+        if this_max:
+            self.best = float('-inf')
+        else:
+            self.best = float('inf')
+
+    def on_epoch_end(self, epoch, logs=None):
+        metric_value = logs[self.save_best_metric]
+        if self.max:
+            if metric_value > self.best:
+                self.best = metric_value
+                self.best_weights = self.model.get_weights()
+                print("Save best weight")
+
+        else:
+            if metric_value < self.best:
+                self.best = metric_value
+                self.best_weights = self.model.get_weights()
+                print("Save best weight")
+best_model= SaveBestModel()
 #Fit the training data to the model and validate it using the validation data
 EPOCHS = 100
 
-history = ensemble_model.fit(train_data, train_labels, validation_data=(val_data, val_labels), callbacks=CALLBACKS, epochs=EPOCHS)
+history = ensemble_model.fit(train_data, train_labels, validation_data=(val_data, val_labels), callbacks=[CALLBACKS, best_model], epochs=EPOCHS)
 
 plt.plot(history.history['acc'])
 plt.plot(history.history['val_acc'])
