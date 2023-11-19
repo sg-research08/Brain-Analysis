@@ -15,7 +15,7 @@ Accurate and timely diagnosis is imperative for effective medical intervention i
 - `train.py` file showcases the comprehensive training process, providing a detailed demonstration of each step involved in training. Additionally, it presents the outcomes and results generated throughout the training procedure.
 - The `Model` directory encompasses two defined Convolutional Neural Network (CNN) architectures and the resulting ensemble architecture derived from them, incorporating the optimal weights.
 
-Note: The code is designed dynamically to facilitate the use of the same scripts across various datasets. Consequently, meticulous handling of paths in the `train.py` and `visualization.py` scripts is essential to ensure effective reproducibility when training and visualizing different datasets.
+Note: The code is designed dynamically to facilitate the use of the same scripts across various datasets. Consequently, meticulous handling of paths in the `train.py` and `visualization.py` scripts is essential to ensure effective reproducibility while training and visualizing different datasets.
 
 # Dataset Citations
 
