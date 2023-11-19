@@ -15,9 +15,17 @@ Accurate and timely diagnosis is imperative for effective medical intervention i
 - `train.py` file showcases the comprehensive training process, providing a detailed demonstration of each step involved in training. Additionally, it presents the outcomes and results generated throughout the training procedure.
 - The `Model` directory encompasses two defined Convolutional Neural Network (CNN) architectures and the resulting ensemble architecture derived from them, incorporating the optimal weights.
 
-Note: The code is designed dynamically to facilitate the use of the same scripts across various datasets. Consequently, meticulous handling of paths in the `train.py` and `visualization.py` scripts is essential to ensure effective reproducibility while training and visualizing different datasets.
-
 # Dataset Citations
 
 - The brain tumor classification dataset used in this project is obtained from [Kaggle Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/). It is a combined dataset that incorporates data from [figshare](https://figshare.com/articles/dataset/brain_tumor_dataset/1512427), [SARTAJ dataset](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri), and [Br35H](https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection?select=no). The dataset consists of 7023 human brain MRI images, categorized into four classes: glioma, meningioma, no tumor, and pituitary.
 - The Alzheimer's dataset is sourced from Kaggle's [Alzheimer 4 Class Dataset](https://www.kaggle.com/datasets/tourist55/alzheimers-dataset-4-class-of-images), containing a total of 6400 images distributed across four classes: Mild Demented, Moderate Demented, Non Demented, and Very Mild Demented.
+
+# Usage
+
+**Note:** The code is designed dynamically to facilitate the use of the same scripts across various datasets. Consequently, meticulous handling of file paths in the `train.py` and `visualization.py` scripts is essential to ensure effective reproducibility while training and visualizing different datasets.
+
+Steps to be adhered to when running the repository:
+- Clone the repository: `git clone https://github.com/sg-research08/Brain-Analysis.git`
+- Install the required packages: `pip install -r requirements.txt`
+- Run the training script: `python train.py`
+- Run the visualization script: `python visualization.py`
