@@ -14,6 +14,7 @@ Accurate and timely diagnosis is imperative for effective medical intervention i
 - The `visualization.py` script exhibits the visualization procedures, offering an in-depth illustration of the various methods employed for visualizing data. It comprehensively showcases the visual representations generated and their impact on the overall understanding of the data.
 - `train.py` file showcases the comprehensive training process, providing a detailed demonstration of each step involved in training. Additionally, it presents the outcomes and results generated throughout the training procedure.
 - The `Model` directory encompasses two defined Convolutional Neural Network (CNN) architectures and the resulting ensemble architecture derived from them, incorporating the optimal weights.
+- The `Ablation` directory contains the Python script namely `train_ablation.py` for conducting an ablation study on datasets. This study explores variations in data distribution, optimizers, and the time required for training.
 
 # Dataset Citations
 
@@ -29,3 +30,4 @@ Steps to be adhered to when running the repository:
 - Install the required packages: `pip install -r requirements.txt`
 - Run the training script: `python train.py`
 - Run the visualization script: `python visualization.py`
+- Run the ablation study script: `python ablation/train_ablation.py`
