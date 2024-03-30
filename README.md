@@ -9,6 +9,9 @@
 
 Accurate and timely diagnosis is imperative for effective medical intervention in brain-related diseases like Brain Tumors and Alzheimer’s. While contemporary medical imaging approaches tend to focus on individual brain diseases, our GitHub repository introduces BrainMNet, an innovative neural network architecture tailored for classifying brain images and diagnosing various interconnected diseases, with a particular emphasis on brain tumors. The primary objective is to present a unified framework capable of effectively diagnosing a spectrum of brain-related conditions. Our repository provides a thorough validation of BrainMNet's efficacy, specifically highlighting its diagnostic capabilities for Brain Tumor and Alzheimer’s disease. Significantly, our proposed model workflow surpasses current state-of-the-art methods, showcasing substantial improvements in accuracy and precision. Furthermore, it maintains a balanced performance across different classes in the Brain Tumor and Alzheimer’s dataset, underscoring the versatility of our architecture for precise disease diagnosis. This repository represents a noteworthy step towards a unified solution for diagnosing diverse brain-related diseases, initially focusing on Alzheimer's and Brain Tumor while designed to accommodate broader applications.
 
+- *Ghosh, S., Deepti, & Gupta, S*. (2024). **BrainMNet: A unified neural network architecture for brain image classification**. *Network Modeling Analysis in Health Informatics and Bioinformatics*, 13(11).  
+[![DOI:10.1007/s13721-024-00443-8](https://zenodo.org/badge/DOI/10.1007/s13721-024-00443-8.svg)](https://doi.org/10.1007/s13721-024-00443-8)
+
 # About the repository
 
 - The `visualization.py` script exhibits the visualization procedures, offering an in-depth illustration of the various methods employed for visualizing data. It comprehensively showcases the visual representations generated and their impact on the overall understanding of the data.
